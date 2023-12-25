@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="isiForm()">try</button>
+    <script>
+        function isiForm() {
+            let nama = prompt("Masukkan nama anda :");
+            let asal = prompt('Masukkan asal Negara anda :');
+            let konfirmasi = confirm('Apakah data yang terisi sudah benar? \n\n Nama: ' + nama + '\n Asal: ' + asal)
+
+            if (konfirmasi) {
+                alert('Terimakasih sudah mengisi form!')
+            }
+        }
+
+        isiForm();
+    </script>
+</body>
+
+</html>
