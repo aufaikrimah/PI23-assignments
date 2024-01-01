@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fadeIn-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fadeIn-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fadeIn-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeIn-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.app {
+  transition: background-color 0.3s ease;
+  height: 100vh;
+}
+
+.dark {
+  background-color: #011b1b;
+  color: #fff;
+  border-color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #011b1b;
+  border-color: #011b1b;
+}
